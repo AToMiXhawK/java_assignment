@@ -53,6 +53,6 @@ public class Result extends Student implements Sports
 
     public void display_total()
     {
-        System.out.println("Total is "+total);
+        System.out.println(name+" ["+rollno+"] Total Marks: "+total);
     }
 }
