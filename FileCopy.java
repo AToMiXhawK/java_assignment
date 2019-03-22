@@ -1,3 +1,5 @@
+// Program by Reymond
+
 import java.io.*;
 
 public class FileCopy {
