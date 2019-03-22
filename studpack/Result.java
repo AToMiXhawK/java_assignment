@@ -1,4 +1,5 @@
 package studpack;
+import java.util.Scanner;
 
 class Student
 {
@@ -8,10 +9,14 @@ class Student
 
     Student()
     {
-        name = "NULL";
-        rollno = 0 ;
-        mark1 = 0; mark2 = 0; mark3 = 0;
-        System.out.println("Object Created");
+	Scanner sc = new Scanner(System.in);
+	System.out.print("\nEnter name: ");
+        name = sc.next();
+	System.out.print("Enter Rollno: ");
+        rollno = sc.nextInt();
+	System.out.println("Enter marks of 3 subjects: ");
+        mark1 = sc.nextInt(); mark2 = sc.nextInt(); mark3 = sc.nextInt();
+        System.out.println("Student Object Created");
     }
 
     Student(String n, int roll, int m1, int m2, int m3)
