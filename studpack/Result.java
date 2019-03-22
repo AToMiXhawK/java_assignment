@@ -1,6 +1,6 @@
 package studpack;
 
-interface Student
+class Student
 {
     String name;
     int rollno;
@@ -27,17 +27,32 @@ interface Student
 
 interface Sports
 {
-    int grade;
-    
-    Sports(int g)
+    int grade=10;
+    void display_grade();
+}
+
+public class Result extends Student implements Sports
+{
+    public Result(String n, int roll, int m1, int m2, int m3)
     {
-        grade = g;
+        super(n,roll,m1,m2,m3);
     }
 
-    display()
+    public Result() 
+    {
+        super();
+    }
+
+    @Override
+    public void display_grade() 
     {
         System.out.println("Grade is "+grade);
     }
-}
 
-class Result implements Student, Sports
+    int total=mark1+mark2+mark3+grade;
+
+    public void display_total()
+    {
+        System.out.println("Total is "+total);
+    }
+}
