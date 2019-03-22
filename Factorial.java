@@ -1,3 +1,5 @@
+// Program by Reymond
+
 import java.util.Scanner;
 public class Factorial
 {
