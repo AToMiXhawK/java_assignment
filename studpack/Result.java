@@ -53,6 +53,9 @@ public class Result extends Student implements Sports
 
     public void display_total()
     {
-        System.out.println(name+" ["+rollno+"] Total Marks: "+total);
+        System.out.println("\nName        : "+name);
+        System.out.println("Roll no     : " +rollno);
+        System.out.println("Total Marks : " +total);
     }
 }
+
