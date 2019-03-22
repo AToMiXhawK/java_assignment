@@ -1,3 +1,4 @@
+// program by @kryptiksage (Harikrishnan A)
 import java.util.*;
 
 class factorial
